@@ -1,0 +1,16 @@
+.blocked-message {
+    position: fixed !important;
+    bottom: 10px !important; /* 10px from the bottom of the viewport */
+    left: 50% !important; /* Center horizontally */
+    transform: translateX(-50%) translateY(100%) !important; /* Initially hidden */
+    background-color: #e0ae24 !important;
+    color: #040303 !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    font-family: 'Nunito', sans-serif !important;
+    opacity: 0 !important;
+    transition: opacity 0.3s ease !important, transform 0.3s ease !important;
+    z-index: 9999 !important; /* Ensure it's above other content */
+}
