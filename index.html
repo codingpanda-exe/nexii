@@ -204,7 +204,7 @@ gtag("config", "G-TRXPDFGCTZ");
     }
     .services-block {
         display: block;
-        background-color: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+        background-color: rgba(0, 0, 0, 0.4);  /* Dark transparent background */
         padding: 20px;
         border-radius: 5px;
         text-align: center;
@@ -370,7 +370,49 @@ gtag("config", "G-TRXPDFGCTZ");
         transform: scale(0.95);
     }
 
-	
+	.services-item {
+    margin-bottom: 30px; /* Space between items */
+}
+
+.services-block {
+    display: block;
+    padding: 15px;
+    /* background-color: #333; Background color for contrast */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    display: block;
+}
+
+.contact-link:hover {
+    color: #e74c3c; /* Hover color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.separator {
+    margin-bottom: 10px; /* Space between links */
+}
+
+.maintitle {
+    margin-bottom: 10px; /* Space below title */
+}
+
+
+.location-list {
+    list-style-type: disc; /* Adds bullet points */
+    padding-left: 20px;   /* Adds padding to indent the list */
+}
+
+.location-list li {
+    margin-bottom: 10px; /* Optional: Adds space between list items */
+}
+
 
 </style>
 
@@ -408,7 +450,7 @@ gtag("config", "G-TRXPDFGCTZ");
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="mylogo">
-                                        <a class="logo logo-light" href="#">
+                                        <a class="logo logo-light" href="nexiqlabs.com">
                                            <img src="wp-content/uploads/cover/logo.png" alt="NexiqLabs" >            
                                         </a>
                                     </div>
@@ -1124,7 +1166,7 @@ gtag("config", "G-TRXPDFGCTZ");
 						<p class="separator">
 							Ready to take the next step in your career? Apply now for an internship in one of these exciting fields!
 						</p><br>
-						<a href="https://your-google-form-link" class="btn-animated">Apply Now</a>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSfwty5jacqBdoOXHfabW8JgjClms8G_p37YkSqabm7ytGjAPw/viewform?usp=sf_link" class="btn-animated">Apply Now</a>
 					</div>
 				</div>
 				<div class="col-md-12 col-lg-4 resume-item">
@@ -1159,7 +1201,7 @@ gtag("config", "G-TRXPDFGCTZ");
 						<p class="separator">
 							**Mode of Investment:** Flexible options available. Let's discuss how we can work together.
 						</p><br>
-						<a href="https://your-google-form-link" class="btn-animated">Get in Touch</a>
+						<a href="#" class="btn-animated">Get in Touch</a>
 					</div>
 				</div>
 			</div>
@@ -1354,25 +1396,52 @@ gtag("config", "G-TRXPDFGCTZ");
 			
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-lg-4">
-					<div class="infcontactfull">
-					    						    						                        						<div class="contact-block text-center ">
-						<h4 class="maintitle">EMAIL</h4>
-							<span>enquiry@nexiqlabs.com</span>
-							<span>hr@nexiqlabs.com</span>
+				<div class="col-md-12 col-lg-4 services-item">
+					<div class="servfix r-mb-30">
+						<div class="services-block draw">
+							<h4 class="maintitle">EMAIL</h4>
+							<p class="separator">
+								<a href="mailto:enquiry@nexiqlabs.com" class="contact-link">enquiry@nexiqlabs.com</a>
+							</p>
+							<p class="separator">
+								<a href="mailto:hr@nexiqlabs.com" class="contact-link">hr@nexiqlabs.com</a>
+							</p>
 						</div>
-																		    												<div class="contact-block text-center br-lr">
-							<h4 class="maintitle">CALL US</h4>
-							<span>+91 77377 70240</span>
-							<!-- <span>700 1414 34 11</span> -->
-						</div>
-						                        												    						                        						<div class="contact-block text-center ">
-						<h4 class="maintitle">ADDRESS</h4>
-							<span>Udaipur, Rajasthan</span>
-							<span>India</span>
-						</div>
-																	</div>
+					</div>
 				</div>
+				
+				<div class="col-md-12 col-lg-4 services-item">
+					<div class="servfix r-mb-30">
+						<a href="https://wa.me/917737770240" target="_blank" class="services-block draw">
+							<h4 class="maintitle"><i class="fa fa-whatsapp"></i> WHATSAPP</h4>
+							<span class="whatsapp">
+								 +91 77377 70240
+							</span>
+						</a>
+					</div>
+				</div>
+				
+				<div class="col-md-12 col-lg-4 services-item">
+					<div class="servfix r-mb-30">
+						<div class="services-block draw">
+							<h4 class="maintitle">LOCATIONS SERVED</h4>
+							<ul class="separator" style="list-style-type: disc; padding-left: 20px;">
+								<li><a href="#" style="color: #ffffff;" class="contact-link">India</a></li>
+								<li><a href="#" style="color: #ffffff;" class="contact-link">Italy</a></li>
+								<li><a href="#" style="color: #ffffff;" class="contact-link">Germany</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-4 services-item">
+					<div class="servfix r-mb-30">
+						<a href="tel:+917737770240" class="services-block draw">
+							<h4 class="maintitle"><i class="fa fa-phone"></i> CALL US</h4>
+							<span class="tel">+91 77377 70240</span>
+						</a>
+					</div>
+				</div>
+				
 				<div class="col-md-12 col-lg-8">
 					<div class="contact-formone">
 						<div id="registration" class="form-inline contact-form">
